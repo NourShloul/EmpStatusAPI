@@ -18,7 +18,7 @@ namespace EmpStatusAPI.Controllers
             var empInfo = processStatus.GetEmpStatus(nat);
             if (empInfo == null)
             {
-                return NotFound(); // إذا لم يكن الرقم الوطني موجودًا
+                return NotFound();
             }
             return Ok(empInfo);
         }
