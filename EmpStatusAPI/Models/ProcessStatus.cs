@@ -15,7 +15,7 @@ namespace EmpStatusAPI.Models
 
             if (user == null)
             {
-                return null; // سيتم التعامل معها لاحقًا في الـ API
+                return null;
             }
 
             var salaries = dataAccess.GetSalariesByUserId(user.ID);
